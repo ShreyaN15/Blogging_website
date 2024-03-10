@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : Editor</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+
+</head>
+<body>
+    
+    <div class="banner">
+        <input type="file" id="image-input" accept="image/*" style="display: none;">
+        <label for="image-input" style="cursor: pointer;">
+        <img id="profile-image" alt="Upload Image" style="height: 400px; width: 1220px;">
+        </label>
+
+        <!--<img src="img/img1.png">
+        <input type="file" accept="image/*" id="banner-upload" hidden>
+        <label for="banner-upload" class="banner-upload-btn"><img src="img/upload.png" alt="upload banner"></label>
+        -->
+    </div>
+    <form id="myForm" action="blog.html" method="get">
+        <div class="blog">
+            <textarea type="text" class="title" name="blog_title" placeholder="Blog title..."></textarea>
+            <textarea type="text" class="article" name="blog_article" placeholder="Start writing here..."></textarea>
+        </div>
+    
+        <div class="blog-options">
+            <button type="submit" class="btn dark publish-btn">Publish</button>
+            <input type="file" accept="image/*" id="image-upload" hidden>
+            <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+        </div>
+    </form>
+
+
+    
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js"></script>
+
+<script src="js/firebase.js"></script>
+<script src="js/editor.js"></script>
+
+    </body>
+</html>
